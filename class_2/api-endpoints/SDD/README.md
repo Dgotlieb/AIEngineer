@@ -12,11 +12,9 @@ no answer key, no rubric to game, no dependency hints. This `SDD/` folder (insid
 the lesson repo) holds the **task** (`PROMPT.md`) and the **validator**
 (`validate-lab/`); the building happens in the other repo.
 
-## 1. Get a clean build workspace
+## 1. In a NEW workspace open class_2/api-endpoints-sdd
 
 ```bash
-git clone https://github.com/ProciGen-AI/lesson-02-api-endpoints-sdd.git
-cd lesson-02-api-endpoints-sdd
 source setup.sh                  # venv + base deps (boto3, python-dotenv) + Bedrock smoke test
 mv CLAUDE.md-example CLAUDE.md   # activate the build conventions your agent reads
 ```
