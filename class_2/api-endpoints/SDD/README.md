@@ -18,11 +18,10 @@ the lesson repo) holds the **task** (`PROMPT.md`) and the **validator**
 git clone https://github.com/ProciGen-AI/lesson-02-api-endpoints-sdd.git
 cd lesson-02-api-endpoints-sdd
 source setup.sh                  # venv + base deps (boto3, python-dotenv) + Bedrock smoke test
-mv CLAUDE.md-example CLAUDE.md   # activate the build conventions your agent reads
 ```
 
-> The build repo is deliberately bare — **setup + data + conventions only**, no
-> `PROMPT.md`, no `requirements.txt`, no answer. It has no `.env.example` either:
+> The build repo is deliberately bare — **setup + data only**, no `PROMPT.md`,
+> no `requirements.txt`, no answer. It has no `.env.example` either:
 > **bring your own `.env`** — copy the one you already filled in for this lesson
 > (e.g. `cp ../lesson-02-api-endpoints/.env .env`, adjust the path to wherever you
 > cloned the lesson repo).
@@ -32,9 +31,9 @@ mv CLAUDE.md-example CLAUDE.md   # activate the build conventions your agent rea
 ## 2. Build
 
 Hand your agent the task — **`PROMPT.md` in this `SDD/` folder** (open it and paste
-it, or point your agent at it). It's a *partial* spec; the load-bearing decisions
-are yours (the `▢ YOU DECIDE` block). Build `06-prompt-template.py` in the build
-repo, run it, iterate:
+it, or point your agent at it). Stack constraints are in the prompt; the
+load-bearing design decisions are yours (the `▢ YOU DECIDE` block). Build
+`06-prompt-template.py` in the build repo, run it, iterate:
 
 ```bash
 python 06-prompt-template.py

@@ -4,12 +4,11 @@
   Everything inside these <!-- ... --> comments is for you. Your editor greys
   them out, so what's left in plain text is the prompt itself.
 
-  1. Rename CLAUDE.md-example -> CLAUDE.md so your agent reads the conventions.
-  2. The plain text below is a *partial* prompt. Hand it to your coding agent
+  1. The plain text below is a *partial* prompt. Hand it to your coding agent
      to build 06-prompt-template.py.
-  3. It's deliberately incomplete. The decisions at the bottom are left out on
+  2. It's deliberately incomplete. The decisions at the bottom are left out on
      purpose — that's the exercise.
-  4. When you think it's done: run `python 06-prompt-template.py`, answer the
+  3. When you think it's done: run `python 06-prompt-template.py`, answer the
      menus, then invoke the validate-lab skill to score it against the reference.
 ─────────────────────────────────────────────────────────────────────────── -->
 
@@ -21,6 +20,14 @@ whatever they want.
 
 Write the script as `06-prompt-template.py` at the root of your build repo (your
 working directory) — that's where you'll run it from.
+
+## Constraints
+
+- Call the model with boto3 Bedrock Converse.
+- Keep the Bedrock call in one function so a provider swap is easy.
+- Config from env: `.env` via `load_dotenv(find_dotenv())`; model ID + region
+  from env vars, never hard-coded.
+- Comment only the non-obvious AI/SDK bits — skip the obvious.
 
 <!-- ▢ YOU DECIDE — left out of the prompt on purpose; this is the exercise:
        - which request dimensions become menus, and what options (with examples)
