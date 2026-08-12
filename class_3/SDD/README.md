@@ -20,7 +20,7 @@ Google Drive:
 
 ```bash
 git clone "https://github.com/Dgotlieb/AIEngineer.git"
-cd AIEngineer/class_3_new/SDD
+cd AIEngineer/class_3/SDD
 # create a working .env here (your AWS creds + BEDROCK_MODEL_ID) before the next line
 source setup.sh                  # venv + base deps (boto3, python-dotenv) + Bedrock smoke test
 mv CLAUDE.md-example CLAUDE.md   # activate the build conventions your agent reads
