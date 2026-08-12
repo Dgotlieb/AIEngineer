@@ -41,7 +41,7 @@ Clone this lesson — also sent via WhatsApp / Google Drive:
 
 ```bash
 git clone "https://github.com/Dgotlieb/AIEngineer.git"
-cd AIEngineer/class_3_new/code
+cd AIEngineer/class_3/code
 source setup.sh
 ```
 
